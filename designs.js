@@ -18,10 +18,10 @@ sizePicker.addEventListener("submit", function(e){
 function makeGrid() {
 
 // Your code goes here!
-    for (let i = 1; i < gridHeight.value; i++) {
+    for (let i = 0; i < gridHeight.value; i++) {
         const row = document.createElement("tr");
         pixelCanvas.appendChild(row);
-        for (let j= 1; j < gridWidth.value; j++) {
+        for (let j= 0; j < gridWidth.value; j++) {
             const column = document.createElement("td");
             row.appendChild(column)
             column.addEventListener("mousedown", colorPickerChange)
